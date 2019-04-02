@@ -4,6 +4,7 @@ function display(){
     var feb="MONTH HAS 28 dAYS";
     var oddday="MONTH HAS 31 DAYS";
     var evenday="MONTH HAS 30 DAYS";
+    if(value>=1 && value<=12){
     if(value ==1 || value==3 || value==5 || value==7 || value==8 || value==10 || value==12){
     dis.innerHTML=oddday;  
 }
@@ -13,4 +14,9 @@ function display(){
     else{
      dis.innerHTML=evenday;
     }
-}   
+        
+} 
+    else{
+        alert("THERE ARE 1 to 12 MONTHS ONLY");
+    }
+}
